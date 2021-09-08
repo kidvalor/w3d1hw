@@ -4,16 +4,48 @@ div {
   padding: 5px;
   }
 
-  .bedroom {
+  .bedroom#bed-1 {
     background-color: #2B7188;
+    grid-column: 1/5;
+    grid-row: 1/5;
+  }
+  
+  .bedroom#bed-2 {
+    background-color: #2B7188;
+    grid-column: 1/5;
+    grid-row: 7/12;
+  }
+  
+  .bedroom#bed-3 {
+    background-color: #2B7188;
+    grid-column: 8/12;
+    grid-row: 5/12;
   }
 
+  .bath#bath-Full {
+    background-color: #728831;
+    grid-column: 1/5;
+    grid-row: 5/7;
+  }
+
+  .bath#bath-Half {
+    background-color: #728831;
+    grid-column: 5/8;
+    grid-row: 5/12;
+  }
   .livingroom {
     background-color: #C9AC82;
+    grid-column: 5/10;
+    grid-row: 1/5;
   }
 
   .kitchen {
     background-color: #F1A73B;
+    grid-column: 10/12;
+    grid-row: 1/5;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
   }
 
 .bath {
@@ -22,10 +54,21 @@ div {
 
 .oven {
   background-color: #C94716;
+  grid-column: 1/2;
+grid-row: 1/2;
 }
 
 .sink {
   background-color: #935613;
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+.floorplan {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(10, 1fr);
+  gap: 0px;
+  grid-auto-rows: minmax(100px, auto);
 }
 
 h3 {
@@ -33,7 +76,9 @@ h3 {
 }
 
 
-
+div {
+  text-align: center;
+}
 
 
 

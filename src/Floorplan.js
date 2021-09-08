@@ -7,7 +7,7 @@ import Bath from "./Bath"
 
 function Floorplan(){
         return (
-            <div>
+            <div className="floorplan">
                 <Bedroom number="1"/>
                 <Kitchen />
                 <Bath name ="Full"/>
