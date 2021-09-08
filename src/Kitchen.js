@@ -5,7 +5,7 @@ import Sink from "./Sink"
 
 function Kitchen() {
         return (
-            <div>
+            <div className="kitchen">
                <h3>Kitchen</h3>
                <Oven />
                <Sink />

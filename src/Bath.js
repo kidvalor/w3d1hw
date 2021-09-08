@@ -3,7 +3,7 @@ import React from 'react';
 function Bath(props) {
     
         return (
-            <div>
+            <div className="bath">
               <h3>{props.name} Bath</h3>  
             </div>
         );
